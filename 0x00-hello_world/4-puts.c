@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - code to output a message as described 
+ * main - Entry point
  * Return: Always 0
  */
 
