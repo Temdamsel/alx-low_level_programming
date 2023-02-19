@@ -7,12 +7,17 @@
  */
 int main(void)
 {
-	char letter;
-	
-	for (letter = 'a'; letter <= 'z'; letter++)
+	int ch;
+
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		if (letter != 'e' && letter != 'q')
+		if (ch != 'e' && ch != 'q')
+		{
 			putchar(letter);
+	}
+	else
+	{
+	}
 	}
 	putcher('\n');
 
