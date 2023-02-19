@@ -3,7 +3,7 @@
 /**
  * main - Prints the alphabet in lowercase, except for q and e
  *
- * Return: 0
+ * Return: Always 0
  */
 int main(void)
 {
@@ -19,7 +19,7 @@ int main(void)
 	{
 	}
 	}
-	putcher('\n');
+	putchar('\n');
 
 	return (0);
 }
