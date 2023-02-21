@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - Entry Point
@@ -8,11 +8,16 @@
 
 int main(void)
 {
-	int i =  _putchar;
+	putchar('_');
+	putchar('p');
+	putchar('u');
+	putchar('t');
+	putchar('c');
+	putchar('h');
+	putchar('a');
+	putchar('r');
 
-	putchar('i');
-
-	putchar('\n')
+	putchar('\n');
 
 	return (0);
 }
