@@ -12,42 +12,66 @@
 char *str_concat(char *s1, char *s2)
 
 {
+
 	char *conct;
 
 	int i, ci;
 
-		if (s1 == NULL)
-			s1 = "";
 
-		if (s2 == NULL)
-			s2 = "";
-			i = ci = 0;
 
-		while (s1[i] != '\0')
-			i++;
+	if (s1 == NULL)
 
-		while (s2[ci] != '\0')
-			ci++;
+		s1 = "";
 
-		conct = malloc(sizeof(char) * (i + ci + 1));
+	if (s2 == NULL)
 
-		if (conct == NULL)
-			return (NULL);
-			i = ci = 0;
+		s2 = "";
 
-		while (s1[i] != '\0')
 
-	{
-		conct[i] = s1[i];
+
+		i = ci = 0;
+
+	while (s1[i] != '\0')
+
 		i++;
+
+	while (s2[ci] != '\0')
+
+		ci++;
+
+	conct = malloc(sizeof(char) * (i + ci + 1));
+
+
+
+	if (conct == NULL)
+
+		return (NULL);
+
+	i = ci = 0;
+
+	while (s1[i] != '\0')
+
+	{
+
+		conct[i] = s1[i];
+
+		i++;
+
 	}
 
-		while (s2[ci] != '\0')
+
+
+	while (s2[ci] != '\0')
+
 	{
+
 		conct[i] = s2[ci];
+
 		i++, ci++;
+
 	}
-		conct[i] = '\0';
+
+	conct[i] = '\0';
 
 	return (conct);
 }
