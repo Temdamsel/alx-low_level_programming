@@ -1,8 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+
 char *create_buffer(char *file);
-void close_file(int xd);
+void close_file(int fd);
+
 /**
  * create_buffer - allocate 1024 bytes for a buffer
  * @file: the name of the file the buffer is storing file for
@@ -23,17 +25,18 @@ char *create_buffer(char *file)
 }
 /**
  * close_file - Closes the file description
- * @xd: file to be closed
+ * @fd: file to be closed
  */
-void close_file(int xd)
+
+void close_file(int fd)
 {
 	int x;
 
-	x = close(xd);
+	x = close(fd);
 
 	if (x == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Cant close xd %d\n", xd);
+		dprintf(STDERR_FILENO, "Error: Cant close xd %d\n", fd);
 		exit(100);
 	}
 }
